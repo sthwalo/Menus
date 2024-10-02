@@ -1,0 +1,353 @@
+/*
+ Theme Name: LeoLilly Theme
+ Theme URI: https://leolilly.org
+ Author: Immaculate
+ Author URI: https://leolilly.org
+ Description: Custom WordPress theme for LeoLilly Care International.
+ Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu|Pacifico|Cutive+Mono|Source+Sans+Pro');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* ==========================
+   General Body Styling
+========================== */
+/* General body styling for font and background */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    color: #0D0D0D; /* Black text */
+}
+
+/* Clear floats */
+.clear {
+    clear: both;
+}
+
+/* General link styling */
+a {
+    color: #FFFFFF; /* White for links */
+    text-decoration: none;
+}
+
+/* ==========================
+   Header Styling
+========================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40363B; /* Dark grey background */
+    padding: 10px 20px;
+    color: #FFFFFF; /* White text color */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays on top when scrolling */
+}
+
+/* ==========================
+   Logo Styling
+========================== */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo-image {
+    max-width: 150px; /* Restrict logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* ==========================
+   Navigation Menu Styling (Desktop)
+========================== */
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal display for desktop */
+}
+
+.nav-menu ul li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+.nav-menu ul li a {
+    color: #FFFFFF; /* White text color */
+    text-decoration: none; /* No underline */
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #3a1846; /* Background color change on hover */
+    border-radius: 4px; /* Add smooth edges to hovered item */
+}
+
+/* ==========================
+   Mobile Menu Styling
+========================== */
+/* Hides the menu on smaller screens by default */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Hide hamburger icon on larger screens */
+.icon {
+    display: none;
+    font-size: 24px; /* Icon size */
+    color: #FFFFFF;
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+/* ==========================
+   Responsive Design (Mobile)
+========================== */
+@media screen and (max-width: 768px) {
+
+    /* Hide desktop navigation menu on mobile */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #40363B; /* Match header color */
+        position: relative;
+        top: 5px;
+        left: 0;
+        text-align: center; /* Align text centrally for mobile */
+    }
+
+    /* Display the hamburger icon on mobile */
+    .icon {
+        display: block;
+    }
+
+    /* Show the navigation menu when the 'show' class is added */
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically on mobile */
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+        padding: 15px;
+        font-size: 18px; /* Increase font size for mobile readability */
+    }
+
+    .section .W,
+    .top-students .student {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================
+   Button Styling
+========================== */
+button,
+.cta-button,
+.whatsapp-button {
+    padding: 10px 20px;
+    background-color: #753F8C; /* Purple background */
+    color: #FFFFFF; /* White text */
+    border: 2px solid #5D8C6D; /* Green border */
+    border-radius: 2px 50px 2px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* Hover state for buttons */
+button:hover,
+.cta-button:hover,
+.whatsapp-button:hover {
+    background-color: #5D8C6D; /* Green on hover */
+    cursor: pointer;
+}
+
+/* ==========================
+   Hero Section Styling
+========================== */
+/* Styling for the hero section message */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #753F8C; /* Purple background */
+    color: white;
+}
+
+/* ==========================
+   General Section Styling
+========================== */
+/* General styling for all sections */
+.section {
+    text-align: center;
+    color: #0D0D0D;
+    padding-bottom: 5%;
+}
+
+.section h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    padding: 5% 0 3%;
+    color: #40363B;
+}
+
+/* ==========================
+   Courses Section Styling
+========================== */
+/* Layout and styling for courses section */
+.section .W {
+    display: inline-block;
+    width: 45%;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #444;
+    transition: background-color 0.5s ease, border-radius 0.5s ease;
+}
+
+/* Hover effect for the courses section */
+.section .W:hover {
+    border-radius: 20px;
+    background-color: #753F8C;
+    color: #FFFFFF;
+}
+
+.section .W h2 {
+    font-size: 26px;
+    color: #5D8C6D;
+    padding-top: 5%;
+}
+
+.section .W p {
+    color: #40363B;
+    padding-bottom: 40px;
+}
+
+/* ==========================
+   Top Students Section Styling
+========================== */
+/* Layout for top students section */
+.top-students {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.top-students h1 {
+    padding-bottom: 55px;
+    color: #40363B;
+    letter-spacing: 1.8;
+    line-height: 1.7;
+}
+
+/* Container layout for each student */
+.top-students .student {
+    display: inline-block;
+    width: 30.333%;
+    padding: 10px;
+    transition: background-color 0.7s ease;
+}
+
+.top-students .student img {
+    border-radius: 5px 20px;
+    width: 100%;
+    height: 350px;
+}
+
+/* Hover effect for student containers */
+.top-students .student:hover {
+    background-color: #753F8C;
+    color: #FFFFFF;
+}
+
+/* ==========================
+   About Section Styling
+========================== */
+/* Layout and background for about section */
+.about {
+    background-color: #40363B;
+    padding-top: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about h1 {
+    font-size: 36px;
+    color: #5D8C6D;
+}
+
+.about p {
+    font-size: 18px;
+    padding-bottom: 60px;
+    color: #F2F2F2;
+}
+
+/* ==========================
+   Enrollment Form Section Styling
+========================== */
+/* Layout for the enrollment form section */
+.enroll {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F2F2F2;
+    color: #40363B;
+}
+
+/* Form styling within enrollment section */
+.enroll form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.enroll input,
+.enroll select,
+.enroll button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styling within the form */
+.enroll button {
+    background-color: #753F8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for the form button */
+.enroll button:hover {
+    background-color: #5D8C6D;
+}
+
+/* ==========================
+   Footer Section Styling
+========================== */
+/* Footer layout and background */
+.footer-content {
+    text-align: center;
+    background-color: #40363B;
+    padding: 20px;
+    color: #F2F2F2;
+}
+
+/* Footer link styling */
+.footer-content a {
+    color: #5D8C6D;
+};
