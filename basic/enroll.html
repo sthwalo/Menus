@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enroll - LeoLilly Care International</title>
+    
+    <!-- External CSS for FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu|Pacifico|Cutive+Mono|Source+Sans+Pro">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://leolilly.org/wp/wp-content/uploads/2024/09/Final-Logo-.png" alt="LeoLilly Logo" class="logo-image">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile menu icon -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    
+    <!-- Enrollment Form Section -->
+    <section id="enroll" class="enroll">
+        <h2>Enroll in Our Courses</h2>
+        <p>Fill in the form below to register for one of our caregiving courses.</p>
+        <form id="enrollment-form" action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="Elderly Care Caregiving">Elderly Care Caregiving</option>
+                <option value="Child Minding">Child Minding</option>
+                <option value="AU Pair Night Nursing">AU Pair Night Nursing</option>
+                <option value="First Aid Level 1">First Aid Level 1</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact Us: +27 73 354 4713 | <a href="mailto:admin@leolilly.org">admin@leolilly.org</a></p>
+            <p>Address: 1006 Blauwberg Building, 22 Kapteijn Street, Hillbrow, Johannesburg, 2001</p>
+            <a href="https://wa.me/27743809752" class="whatsapp-button-footer">Chat with us on WhatsApp!</a>
+        </div>
+
+        <p>© 2024 Global Hope Consortium. Designed and Developed with Care.</p>
+    </footer>   
+    
+
+
+</body>
+</html>

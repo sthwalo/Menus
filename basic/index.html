@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navigation Menu</title>
+    <!-- FontAwesome for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu|Pacifico|Cutive+Mono|Source+Sans+Pro">
+    <!-- Link to the custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the custom JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Logo Container -->
+        <div class="logo-container">
+            <!-- Logo Image (Not Clickable) -->
+            <img src="https://leolilly.org/wp/wp-content/uploads/2024/09/Final-Logo-.png" alt="LeoLilly Logo" class="logo-image">
+        </div>
+
+        <!-- Navigation Menu for Larger Screens -->
+        <nav class="nav-menu" id="navLinks">
+            <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile menu icon (Hamburger) -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i> <!-- Initial state as hamburger icon -->
+        </a>
+    </header>
+
+   
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Legacy Building Through Caregiving</h2>
+        <p>Join our 4-in-1 Caregiver Combo Courses and start your career in caregiving today!</p>
+        <p><strong>Total Cost: R2000 for all courses</strong></p>
+        <a href="booking.html" class="cta-button">Enroll Now</a>
+        <a href="https://wa.me/27743809752" class="whatsapp-button">Have questions? Chat with us on WhatsApp!</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h3>Our Courses</h3>
+            <p>Explore our comprehensive courses designed to help you build a legacy in caregiving.</p>
+            <a href="courses.html" class="cta-button">See More</a>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="top-students">
+        <div class="container">
+            <h1>Success Stories</h1>
+            <div class="student">
+                <img src="/img/Final Logo .png" alt="Student 1">
+                <h3>John Doe</h3>
+                <p>"LeoLilly Care International helped me build a successful caregiving career!"</p>
+            </div>
+            <div class="student">
+                <img src="/img/Final Logo .png" alt="Student 2">
+                <h3>Jane Smith</h3>
+                <p>"The training I received made me confident and prepared for my caregiving role."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h1>About LeoLilly Care International</h1>
+            <p>Founded in 2024 by the children of Leo and Lilly, we aim to build a legacy of caregiving through our comprehensive 4-in-1 courses, providing essential skills for those looking to work in the caregiving field.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact Us: +27 73 354 4713 | <a href="mailto:admin@leolilly.org">admin@leolilly.org</a></p>
+            <p>Address: 1006 Blauwberg Building, 22 Kapteijn Street, Hillbrow, Johannesburg, 2001</p>
+            <p>About Us: LeoLilly Care International was founded in 2024 by the children of Leo and Lilly as a legacy-building institution.</p>
+            <a href="https://wa.me/27743809752" class="whatsapp-button-footer">Chat with us on WhatsApp!</a>
+        </div>
+        <p>© 2024 Global Hope Consortium. Designed and Developed with Care.</p>
+    </footer>
+   
+
+
+</body>
+</html>
